@@ -30,9 +30,14 @@ body {
     }
     &__rtl {
         font-family: "Cairo", sans-serif;
+        direction: rtl;
+        .banner__container {
+            background-image: url("../img/Arch-design-studioRtl.png");
+        }
         .banner__desc {
             h1 {
                 font-size: 42px;
+                line-height: 2;
                 @include max_xlarge {
                     font-size: 34px;
                 }
@@ -40,7 +45,7 @@ body {
                     font-size: 29px;
                 }
                 @include xSmall{
-                    font-size: 23px;
+                    font-size: 21px;
                 }
             }
             p {
